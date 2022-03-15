@@ -8,6 +8,13 @@ section divider
 - icons 
 - footer
 
+task
+[] navigation bar setup - header with only logo appears when starts, it disappears when scrolled down, burger icon appears -> when clicks navigation bar appears (fixed)
+[] desktop responsive
+[] footer styling
+[] item filtering
+[] test page added
+
 online resources 
 - https://www.inflearn.com/course/%EC%8B%AC%EB%A6%AC%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%82%AC%EC%9D%B4%ED%8A%B8-%EC%A0%9C%EC%9E%91/lecture/68675?tab=curriculum&volume=1.00 -> feature - skin type test
 
