@@ -80,6 +80,7 @@ a{
     -webkit-box-shadow: inset 0 -3px #8b8b8b;
     box-shadow: inset 0 -3px #8b8b8b;
     border-radius: 30px;
+
 }
 
 #navbar {
@@ -88,16 +89,19 @@ a{
     position: fixed;
     top:1vh;
     left:1vh;
-    height:90vh;
-    max-width: 30vw;;
+    height: 90vh;
+    max-width: 40vw;;
     z-index: 1;
+    opacity: 0.9;
     flex-direction: column;
     align-items: center;
     margin:0;
-    background-color: #24252a;
-    padding: 20px 0;
+    /* background-color: #24252a; */
+    background-color: #424242;
+    padding: 20px 20px;
     border-radius: 10px;
     text-align: center;
+    transition: opacity 1s ease;
 }
 
 #navbar--mobile{
@@ -173,6 +177,12 @@ a{
 
 .sns_link a i:hover {
     opacity:0.5;
+
+}
+
+.navbar__closeBtn{
+    color:white;    
+    font-size:30pt;
 
 }
 

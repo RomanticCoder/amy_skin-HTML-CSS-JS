@@ -39,8 +39,11 @@
         flex-direction: row;
     }
 
+    .navbar__closeBtn{
+        display: none;
+    }
+
     #intro{
-        margin-top: 100px;
     }
 
     #skinTypeTest{
