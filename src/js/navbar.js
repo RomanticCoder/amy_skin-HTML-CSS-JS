@@ -22,20 +22,23 @@ window.addEventListener("resize", (event) => {
 })
 
 window.addEventListener("scroll", (event) => {
-    if (window.innerWidth > 650) {
+    if (window.innerWidth > 1200) {
         return;
     }
     // y 100 over > navbar--mobile X , burger icon O
 
     //mobile only
 
-    if (navbar.style.display == "flex")
-        return;
+    // if (navbar.style.display == "flex")
+    //     return;
     const pageY = (window.pageYOffset)
     if (pageY > 100) {
         navBtn.style.display = "block"
+        navbar.style.display = "none"
     } else {
         navBtn.style.display = "none"
+        navbar.style.display = "none"
+
     }
 
 })
