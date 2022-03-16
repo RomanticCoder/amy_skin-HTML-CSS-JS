@@ -13,6 +13,7 @@
         justify-content: space-evenly;
         height:auto;
         align-items: center;
+        opacity: 0.97;
     }
 
     .navbar__logo{
@@ -43,6 +44,10 @@
         display: none;
     }
 
+    .navbar__closeBtn{
+        display: none;
+        visibility: none;
+    }
     #intro{
     }
 
