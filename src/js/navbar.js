@@ -11,12 +11,13 @@ window.addEventListener("resize", (event) => {
         desktopLogo.style.display = "block"
         mobileLogo.style.display = "none"
         mobileNavbar.style.display = "none"
+        navbar.style.display = "flex"
     } else {
         // mobile, tablet
         desktopLogo.style.display = "none"
         mobileLogo.style.display = "block"
         mobileNavbar.style.display = "block"
-
+        navbar.style.display = "none"
     }
 })
 
@@ -46,4 +47,5 @@ navBtn.addEventListener("click", () => {
 
 closeBtn.addEventListener("click", () => {
     navbar.style.display = "none"
+    navBtn.style.display = "block"
 })
