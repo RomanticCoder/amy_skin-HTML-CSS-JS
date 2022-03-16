@@ -59,9 +59,6 @@ let qnaList;
 let qIndex = 0;
 let endPoint;
 
-goResult();
-
-
 startBtn.addEventListener("click", () => {
     qna.style.display = "block"
     // qnaContainer.style.display = "50vh";
@@ -86,7 +83,7 @@ aBox.addEventListener("click", (event) => {
 })
 
 resultBtn.addEventListener("click", (e) => {
-    productCategories.scrollIntoView()
+    productSection.scrollIntoView()
     const categories = productCategories.querySelectorAll(".category__btn")
     categories.forEach((category) => {
         const filter = "001"
@@ -101,6 +98,7 @@ resultBtn.addEventListener("click", (e) => {
 })
 
 function goResult() {
+    progressBar.style.width = `100%`
     qna.style.display = "block"
     qnaContainer.style.display = "none"
     resultContainer.style.display = "block"
@@ -114,7 +112,6 @@ function printProgressBar() {
 function goNextQuestion(qIndex) {
     if (!qnaList[qIndex]) {
         if (qIndex === endPoint) {
-            printProgressBar();
             goResult();
         }
         console.log("no more answer set")

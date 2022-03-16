@@ -13,12 +13,14 @@
 
 .qna__container{
     display: block;
+    overflow-x: hidden;
 }
 
 .progressBox{
     border-radius: 20px;
     height:10px;
-    width:80%;
+    width:100%;
+    max-width: 100%;
     background-color: rgb(255, 255, 255);
     margin-bottom: 30px;
 }

@@ -68,6 +68,16 @@
         justify-content: space-around;
     }
 
+    .test__qna{
+        max-width: 80vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .result__description{
+        max-width: 80vw;
+    }
     .product_container{
         max-width: 80vw;
 
