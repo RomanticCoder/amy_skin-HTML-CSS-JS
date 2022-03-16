@@ -4,16 +4,19 @@ const desktopLogo = document.querySelector(".navbar__logo.desktop")
 const navBtn = document.querySelector("#navBtn")
 const navbar = document.querySelector("#navbar")
 const closeBtn = document.querySelector(".navbar__closeBtn")
-
+const mobileNavbar = document.querySelector("#navbar--mobile")
 window.addEventListener("resize", (event) => {
     if (window.innerWidth > 650) {
         //desktop
         desktopLogo.style.display = "block"
         mobileLogo.style.display = "none"
+        mobileNavbar.style.display = "none"
     } else {
         // mobile, tablet
         desktopLogo.style.display = "none"
         mobileLogo.style.display = "block"
+        mobileNavbar.style.display = "block"
+
     }
 })
 
