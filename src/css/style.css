@@ -227,7 +227,7 @@ a{
     font-size: 30pt;
 }
 
-.skinTypeTest__title > .description {
+.side_heading {
     max-height: 100%;
     color: black;
     font-family: 'Raleway', sans-serif;

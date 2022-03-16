@@ -1,0 +1,44 @@
+{
+    "qnaList": [
+        {
+            "q": "What is your skin type?",
+            "a": [
+                {
+                    "answer": "dry"
+                },
+                {
+                    "answer": "normal"
+                },
+                {
+                    "answer": "comvination"
+                },
+                {
+                    "answer": "oily"
+                },
+                {
+                    "answer": "not sure"
+                }
+            ]
+        },
+        {
+            "q": "fdjkfjdws?",
+            "a": [
+                {
+                    "answer": "dry1"
+                },
+                {
+                    "answer": "fdfddf"
+                },
+                {
+                    "answer": "fds"
+                },
+                {
+                    "answer": "oily"
+                },
+                {
+                    "answer": "not sure"
+                }
+            ]
+        }
+    ]
+}

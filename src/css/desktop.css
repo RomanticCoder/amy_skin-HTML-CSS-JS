@@ -1,5 +1,5 @@
 /* desktop website styling */
-@media screen and (min-width: 650px){
+@media screen and (min-width: 1200px){
 
     #navbar.top_banner {
         display: flex;

@@ -10,11 +10,14 @@ section divider
 
 task
 [x] navigation bar setup - header with only logo appears when starts -> when clicks navigation bar appears (fixed)
-[] navigation bar disappears, burger icon appears when scroll event is fired
+[x] navigation bar disappears, burger icon appears when scroll event is fired
 [x] desktop responsive
 [x] footer styling
 [] item filtering
 [] test page added
+[] QnA design
+https://www.inflearn.com/course/%EC%8B%AC%EB%A6%AC%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%82%AC%EC%9D%B4%ED%8A%B8-%EC%A0%9C%EC%9E%91/lecture/69750?volume=0.56&speed=2&tab=note&mm=null
+
 
 online resources 
 - https://www.inflearn.com/course/%EC%8B%AC%EB%A6%AC%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%82%AC%EC%9D%B4%ED%8A%B8-%EC%A0%9C%EC%9E%91/lecture/68675?tab=curriculum&volume=1.00 -> feature - skin type test
