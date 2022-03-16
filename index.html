@@ -8,32 +8,68 @@
 
     <link type="text/css" href="src/css/reset.css" rel="stylesheet" />
     <link type="text/css" href="src/css/style.css" rel="stylesheet" />
+    <link type="text/css" href="src/css/desktop.css" rel="stylesheet" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&family=Raleway:wght@200;400;600&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
 
     <script src="https://kit.fontawesome.com/006f14bf04.js" crossorigin="anonymous"></script>
+    <script src="src/js/navbar.js" defer></script>
     <title>AMYSKIN</title>
 </head>
 
 <body>
     <header>
-        <nav id="navbar">
-            <img class="navbar__logo" src="src/img/logo.png"><a href="#"></a></img>
+        <button id="navBtn"><i class="fas fa-bars"></i></button>
+        <nav id="navbar--mobile">
+            <a href="#" class="navbar__logo mobile">AMYSKIN</a>
+        </nav>
+        <nav id="navbar" class="top_banner">
+            <a href="#" class="navbar__logo mobile">AMY<br>SKIN</a>
+            <a href="#" class="navbar__logo desktop">AMYSKIN</a>
+            <!-- <a href="#" class="navbar__logo">AMYSKIN</a> -->
             <ul class="navbar__links">
                 <li>
-                    <a href="#">SHOP</a>
+                    <a href="#intro">MAIN</a>
                 </li>
                 <li>
-                    <a href="#">STORES</a>
+                    <a href="#skinTypeTest">TEST</a>
                 </li>
                 <li>
-                    <a href="#">ABOUT</a>
+                    <a href="#products">ITEMS</a>
+                </li>
+                <li>
+                    <a href="#icons">ABOUT</a>
                 </li>
             </ul>
+            <ul class="sns_links">
+                <li class="sns_link">
+                    <a href="https://www.google.com/" target="_blank">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </li>
+                <li class="sns_link">
+                    <a href="https://www.google.com/" target="_blank">
+                        <i class="fa fa-snapchat"></i>
+                    </a>
+                </li>
+                <li class="sns_link">
+                    <a href="https://www.google.com/" target="_blank">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="sns_link">
+                    <a href="https://www.google.com/" target="_blank">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+
         </nav>
     </header>
 
@@ -66,47 +102,45 @@
             <h1 class="main_heading">Chosen For You</h1>
         </div>
         <!--Product Images-->
-        <div class="product">
-            <img class="product__img" src="src/img/products/product1.png">
-            <h4 class="product__name">Body Oil</h4>
-            <h5 class="product__price">$29.99</h5>
-            <button class="product__detailBtn">View More</button>
-        </div>
-        <div class="product">
-            <img class="product__img" src="src/img/products/product1.png">
-            <h4 class="product__name">Body Oil</h4>
-            <h5 class="product__price">$29.99</h5>
-            <button class="product__detailBtn">View More</button>
-        </div>
-        <div class="product">
-            <img class="product__img" src="src/img/products/product1.png">
-            <h4 class="product__name">Body Oil</h4>
-            <h5 class="product__price">$29.99</h5>
-            <button class="product__detailBtn">View More</button>
-        </div>
-        <div class="product">
-            <img class="product__img" src="src/img/products/product1.png">
-            <h4 class="product__name">Body Oil</h4>
-            <h5 class="product__price">$29.99</h5>
-            <button class="product__detailBtn">View More</button>
-        </div>
-        <div class="product">
-            <img class="product__img" src="src/img/products/product1.png">
-            <h4 class="product__name">Body Oil</h4>
-            <h5 class="product__price">$29.99</h5>
-            <button class="product__detailBtn">View More</button>
-        </div>
-        <div class="product">
-            <img class="product__img" src="src/img/products/product1.png">
-            <h4 class="product__name">Body Oil</h4>
-            <h5 class="product__price">$29.99</h5>
-            <button class="product__detailBtn">View More</button>
-        </div>
-        <div class="product">
-            <img class="product__img" src="src/img/products/product1.png">
-            <h4 class="product__name">Body Oil</h4>
-            <h5 class="product__price">$29.99</h5>
-            <button class="product__detailBtn">View More</button>
+        <div class="product_container">
+
+
+            <div class="product">
+                <img class="product__img" src="src/img/products/product1.png">
+                <h4 class="product__name">Body Oil</h4>
+                <h5 class="product__price">$29.99</h5>
+                <button class="product__btn">View More</button>
+            </div>
+            <div class="product">
+                <img class="product__img" src="src/img/products/product1.png">
+                <h4 class="product__name">Body Oil</h4>
+                <h5 class="product__price">$29.99</h5>
+                <button class="product__btn">View More</button>
+            </div>
+            <div class="product">
+                <img class="product__img" src="src/img/products/product1.png">
+                <h4 class="product__name">Body Oil</h4>
+                <h5 class="product__price">$29.99</h5>
+                <button class="product__btn">View More</button>
+            </div>
+            <div class="product">
+                <img class="product__img" src="src/img/products/product1.png">
+                <h4 class="product__name">Body Oil</h4>
+                <h5 class="product__price">$29.99</h5>
+                <button class="product__btn">View More</button>
+            </div>
+            <div class="product">
+                <img class="product__img" src="src/img/products/product1.png">
+                <h4 class="product__name">Body Oil</h4>
+                <h5 class="product__price">$29.99</h5>
+                <button class="product__btn">View More</button>
+            </div>
+            <div class="product">
+                <img class="product__img" src="src/img/products/product1.png">
+                <h4 class="product__name">Body Oil</h4>
+                <h5 class="product__price">$29.99</h5>
+                <button class="product__btn">View More</button>
+            </div>
         </div>
     </section>
 
@@ -137,59 +171,7 @@
     <!--Footer-->
     <footer>
         <div class="item">
-            <h3>STORES</h3>
-            <ul>
-                <li>
-                    <a href="#">Canada</a>
-                </li>
-                <li>
-                    <a href="#">USA</a>
-                </li>
-                <li>
-                    <a href="#">Asia</a>
-                </li>
-            </ul>
-        </div>
-        <div class="item">
-            <h3>STORES</h3>
-            <ul>
-                <li>
-                    <a href="#">Canada</a>
-                </li>
-                <li>
-                    <a href="#">USA</a>
-                </li>
-                <li>
-                    <a href="#">Asia</a>
-                </li>
-            </ul>
-        </div>
-        <ul class="sns_links">
-            <li class="sns_link">
-                <a href="#" target="_blank">
-                    <i class="fa fa-facebook"></i>
-                </a>
-            </li>
-            <li class="sns_link">
-                <a href="#" target="_blank">
-                    <i class="fa fa-snapchat"></i>
-                </a>
-            </li>
-            <li class="sns_link">
-                <a href="#" target="_blank">
-                    <i class="fa fa-twitter"></i>
-                </a>
-            </li>
-            <li class="sns_link">
-                <a href="#" target="_blank">
-                    <i class="fa fa-instagram"></i>
-                </a>
-            </li>
-        </ul>
-        <p class="copyright">AMYSKIN © 2022</p>
-        <!-- <a href="#introImg">
-            <i class="fa fa-arrow-up"></i>
-        </a> -->
+            <p class="copyright">AMYSKIN © 2022</p>
     </footer>
 </body>
 

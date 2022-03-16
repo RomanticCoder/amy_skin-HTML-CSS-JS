@@ -9,9 +9,10 @@ section divider
 - footer
 
 task
-[] navigation bar setup - header with only logo appears when starts, it disappears when scrolled down, burger icon appears -> when clicks navigation bar appears (fixed)
-[] desktop responsive
-[] footer styling
+[x] navigation bar setup - header with only logo appears when starts -> when clicks navigation bar appears (fixed)
+[] navigation bar disappears, burger icon appears when scroll event is fired
+[x] desktop responsive
+[x] footer styling
 [] item filtering
 [] test page added
 
