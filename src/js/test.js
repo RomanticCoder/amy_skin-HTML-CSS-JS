@@ -2,8 +2,12 @@ const startBtn = document.querySelector(".test__btn")
 const qna = document.querySelector(".test__qna")
 const qBox = document.querySelector(".questionBox")
 const aBox = document.querySelector(".answerBox")
+const progressBox = document.querySelector(".progressBox")
+const progressBar = document.querySelector(".progressBar")
+
 let qnaList;
 let qIndex = 0;
+let endPoint;
 
 (function init() {
     qna.style.display = "50vh";
@@ -13,6 +17,7 @@ let qIndex = 0;
             qnaList = data.qnaList
             qIndex = 0;
             goNextQuestion(qIndex);
+            endPoint = qnaList.length
         })
 })();
 
@@ -24,6 +29,7 @@ startBtn.addEventListener("click", () => {
         .then(data => {
             qnaList = data.qnaList
             qIndex = 0;
+            endPoint = qnaList.length
             goNextQuestion(qIndex);
         })
 })
@@ -36,10 +42,18 @@ aBox.addEventListener("click", (event) => {
 })
 
 
+function printProgressBar() {
+    progressBar.style.width = `${(100 / endPoint) * (qIndex)}%`
+}
 
 function goNextQuestion(qIndex) {
     if (!qnaList[qIndex]) {
+        if (qIndex === endPoint) {
+            printProgressBar();
+        }
         console.log("no more answer set")
+
+        // show result 
         return;
     }
     qBox.innerHTML = qnaList[qIndex].q;
@@ -48,4 +62,5 @@ function goNextQuestion(qIndex) {
     answerList.forEach(item => {
         aBox.innerHTML += `<li class="answerBox__item"><button>${item["answer"]}</button></li>`
     });
+    printProgressBar();
 }
