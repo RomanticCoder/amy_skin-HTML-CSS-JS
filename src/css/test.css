@@ -2,11 +2,9 @@
     display: none;
     background-color: rgb(250, 250, 250);
     text-align: center;
-    /* max-width: 90vw; */
     margin: 0 auto;
     padding:30px 0;
     transition: height 0.5s ease-in;
-    /*     border:1px solid black; */
     border-radius: 10px;
     font-family: 'Lato', sans-serif;
     min-height: 420px;
@@ -70,5 +68,9 @@
 }
 
 .result__img{
-    width:200px;
+    width:150px;
+}
+
+.result__btn{
+    margin: 0;
 }

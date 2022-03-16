@@ -27,6 +27,7 @@ startBtn.addEventListener("click", () => {
             qIndex = 0;
             endPoint = qnaList.length
             goNextQuestion(qIndex);
+            qna.scrollIntoView({ behavior: "smooth", block: "center" });
         })
 })
 
