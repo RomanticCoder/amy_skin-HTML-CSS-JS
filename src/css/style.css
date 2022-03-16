@@ -43,7 +43,7 @@ a{
     letter-spacing: 2px;
 }
 
-.test__btn, .product__btn {
+.test__btn, .product__btn, .result__btn {
     width: 200px;
     height: 50px;
     line-height: 40px;
@@ -56,7 +56,7 @@ a{
     margin-top: 30px;
 }
 
-.test__btn:hover, .product__btn:hover {
+.test__btn:hover, .product__btn:hover, .result__btn:hover {
     background-color: black;
     text-decoration: none;
     color: white;
