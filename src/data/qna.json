@@ -21,22 +21,22 @@
             ]
         },
         {
-            "q": "fdjkfjdws?",
+            "q": "What are your skin concerns?",
             "a": [
                 {
-                    "answer": "dry1"
+                    "answer": "Acne"
                 },
                 {
-                    "answer": "fdfddf"
+                    "answer": "Dark spots or uneven tone"
                 },
                 {
-                    "answer": "fds"
+                    "answer": "Wrinkles"
                 },
                 {
-                    "answer": "oily"
+                    "answer": "Clogged pores"
                 },
                 {
-                    "answer": "not sure"
+                    "answer": "Oiliness"
                 }
             ]
         }

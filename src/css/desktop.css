@@ -49,9 +49,7 @@
         display: none;
         visibility: none;
     }
-    #intro{
-        margin-top: 100px;
-    }
+
     .intro__img {
         width: 100vw;
         height:80vh;
