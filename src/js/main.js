@@ -59,6 +59,9 @@ let qnaList;
 let qIndex = 0;
 let endPoint;
 
+console.log("test: 3/17/2022 2:43pm")
+fetch("../../qna.json").then(console.log("data received from json file"))
+
 startBtn.addEventListener("click", () => {
     qna.style.display = "block"
     // qnaContainer.style.display = "50vh";
