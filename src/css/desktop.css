@@ -50,7 +50,16 @@
         visibility: none;
     }
     #intro{
+        margin-top: 100px;
     }
+    .intro__img {
+        width: 100vw;
+        height:80vh;
+        max-height:90vh;
+        object-position: 80% 50%;
+        object-fit: cover;
+    }
+    
 
     #skinTypeTest{
         padding-top: 50px;

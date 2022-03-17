@@ -193,6 +193,7 @@ a{
 .intro__img {
     width: 100vw;
     max-height: 80vh;
+    height:50vh;
     object-position: 80% 50%;
     object-fit: cover;
 }
