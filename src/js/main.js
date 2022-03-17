@@ -64,7 +64,7 @@ startBtn.addEventListener("click", () => {
     // qnaContainer.style.display = "50vh";
     qnaContainer.style.display = "block"
     resultContainer.style.display = "none"
-    fetch("../src/data/qna.json")
+    fetch("../../qna.json")
         .then(response => response.json())
         .then(data => {
             qnaList = data.qnaList
@@ -86,7 +86,7 @@ resultBtn.addEventListener("click", (e) => {
     productSection.scrollIntoView()
     const categories = productCategories.querySelectorAll(".category__btn")
     categories.forEach((category) => {
-        const filter = "001"
+        const filter = "000"
         console.log(category.dataset.filter)
         if (category.dataset.filter !== filter) {
             return
@@ -102,7 +102,7 @@ function goResult() {
     qna.style.display = "block"
     qnaContainer.style.display = "none"
     resultContainer.style.display = "block"
-    resultBox.innerHTML = '<h4 class="side_heading">Red Label Bundel</h4>'
+    // resultBox.innerHTML = '<h4 class="side_heading">Red Label Bundel</h4>'
 }
 
 function printProgressBar() {
