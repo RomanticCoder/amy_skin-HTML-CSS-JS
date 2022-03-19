@@ -1,4 +1,5 @@
 # amy_skin-HTML-CSS-JS
+collaborative work with Amy Jung @luvamiee (Wire Framing, Web Page Design
  
 ## Responsive Web Design
 ### mobile screen
