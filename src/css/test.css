@@ -55,7 +55,8 @@
 
 .qna__result{
     display: none;
-    width:90vw;
+    width:80vw;
+
 }
 
 .qna__result .side_heading{
@@ -70,7 +71,8 @@
 }
 
 .result__img{
-    width:150px;
+    margin-top:-150px;
+    width:300px;
 }
 
 .result__btn{
