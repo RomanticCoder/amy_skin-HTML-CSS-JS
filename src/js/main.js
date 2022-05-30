@@ -59,20 +59,18 @@ let qnaList;
 let qIndex = 0;
 let endPoint;
 
-console.log("test: 3/17/2022 2:43pm")
-fetch("../data/qna.json",{
-    headers : { 
-      'Content-Type': 'application/json',
-      'Accept': 'application/json'
-     }
-  }).then(console.log("data received from json file")).then(console.log("edited"))
-
 startBtn.addEventListener("click", () => {
     qna.style.display = "block"
     // qnaContainer.style.display = "50vh";
     qnaContainer.style.display = "block"
     resultContainer.style.display = "none"
-    fetch("../../qna.json")
+    fetch("../../qna.json",{
+        headers : { 
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+         }
+      }
+    )
         .then(response => response.json())
         .then(data => {
             qnaList = data.qnaList
