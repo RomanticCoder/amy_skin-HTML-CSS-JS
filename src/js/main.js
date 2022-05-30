@@ -60,7 +60,12 @@ let qIndex = 0;
 let endPoint;
 
 console.log("test: 3/17/2022 2:43pm")
-fetch("../../qna.json").then(console.log("data received from json file"))
+fetch("../data/qna.json",{
+    headers : { 
+      'Content-Type': 'application/json',
+      'Accept': 'application/json'
+     }
+  }).then(console.log("data received from json file")).then(console.log("edited"))
 
 startBtn.addEventListener("click", () => {
     qna.style.display = "block"
