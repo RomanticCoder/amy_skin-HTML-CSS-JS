@@ -1,5 +1,9 @@
 # amy_skin-HTML-CSS-JS
 collaborative work with Amy Jung @luvamiee (Wire Framing, Web Page Design
+
+- Created a responsive, interactive web page design using HTML/CSS, JavaScript.
+- Built responsive and functional user interface to allow visitors on any device to have the same great user experience.
+- Designed a mobile-first website, added a responsive navigation bar and a product filter to aid visitors in accessing information.
  
 ## Responsive Web Design
 ### mobile screen
