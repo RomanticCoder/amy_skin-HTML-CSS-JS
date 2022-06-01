@@ -1,4 +1,4 @@
-
+console.log(document.lastModified)
 // filter
 const productSection = document.querySelector("#products")
 const productCategories = document.querySelector(".product__categories");
@@ -55,30 +55,61 @@ const resultContainer = document.querySelector(".qna__result")
 const resultBox = resultContainer.querySelector(".side_heading")
 const resultBtn = resultContainer.querySelector(".result__btn")
 
-let qnaList;
 let qIndex = 0;
 let endPoint;
 
+const qnaList = [
+        {
+            "q": "What is your skin type?",
+            "a": [
+                {
+                    "answer": "dry"
+                },
+                {
+                    "answer": "normal"
+                },
+                {
+                    "answer": "combination"
+                },
+                {
+                    "answer": "oily"
+                },
+                {
+                    "answer": "not sure"
+                }
+            ]
+        },
+        {
+            "q": "What are your skin concerns?",
+            "a": [
+                {
+                    "answer": "Acne"
+                },
+                {
+                    "answer": "Dark spots or uneven tone"
+                },
+                {
+                    "answer": "Wrinkles"
+                },
+                {
+                    "answer": "Clogged pores"
+                },
+                {
+                    "answer": "Oiliness"
+                }
+            ]
+        }
+    ]
+
 startBtn.addEventListener("click", () => {
     qna.style.display = "block"
-    // qnaContainer.style.display = "50vh";
     qnaContainer.style.display = "block"
     resultContainer.style.display = "none"
-    fetch("../../qna.json",{
-        headers : { 
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-         }
-      }
-    )
-        .then(response => response.json())
-        .then(data => {
-            qnaList = data.qnaList
-            qIndex = 0;
-            endPoint = qnaList.length
-            goNextQuestion(qIndex);
-            qna.scrollIntoView({ behavior: "smooth", block: "center" });
-        })
+
+    qIndex = 0;
+    endPoint = qnaList.length
+    goNextQuestion(qIndex);
+    qna.scrollIntoView({ behavior: "smooth", block: "center" });
 })
 
 aBox.addEventListener("click", (event) => {
@@ -93,11 +124,11 @@ resultBtn.addEventListener("click", (e) => {
     const categories = productCategories.querySelectorAll(".category__btn")
     categories.forEach((category) => {
         const filter = "000"
-        console.log(category.dataset.filter)
         if (category.dataset.filter !== filter) {
             return
         }
         selectCategory(category)
+        console.log(category)
     }
     )
     handleCategoryClick()
@@ -120,8 +151,6 @@ function goNextQuestion(qIndex) {
         if (qIndex === endPoint) {
             goResult();
         }
-        console.log("no more answer set")
-
         // show result 
         return;
     }
