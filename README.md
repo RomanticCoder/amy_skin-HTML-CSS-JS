@@ -2,7 +2,7 @@
 a collaborative work with Web Desinger Amy Jung and Front-end Developer Jordan Lee.
 
 Amy Jung 👩‍🎨💻
-- Created a UI wireframe to plan a website structure.
+- Planned a website structure and created a UI wireframe.
 - Developed a mobile-first, responsive website using HTML/CSS.
 - Made use of typography, color, imagery, and graphic elements.
 
