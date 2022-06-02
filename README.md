@@ -1,9 +1,14 @@
-# amy_skin-HTML-CSS-JS
-collaborative work with Amy Jung @luvamiee (Wire Framing, Web Page Design
+# AMY SKIN
+collaborative work with Web Desinger, Amy Jung and Front-end Developer Jordan Lee.
 
-- Created a responsive, interactive web page design using HTML/CSS, JavaScript.
-- Built responsive and functional user interface to allow visitors on any device to have the same great user experience.
-- Designed a mobile-first website, added a responsive navigation bar and a product filter to aid visitors in accessing information.
+Amy Jung 👩‍🎨💻
+- Created a UI wireframe to plan a website structure.
+- Developed a mobile-first, responsive website using HTML/CSS.
+- Made use of typography, color, imagery, and graphic elements.
+
+Jordan Lee 👩‍💻💻
+- Added a responsive navigation bar and a product filter to aid visitors in accessing information using JavaScript.
+- Created a survey to help users find a right item for their skin type.
  
 ## Responsive Web Design
 ### mobile screen
@@ -15,7 +20,8 @@ collaborative work with Amy Jung @luvamiee (Wire Framing, Web Page Design
 
 
 ### Utilized features
-- responsive web design + CSS animation
+- responsive web design 
+- CSS animation
 - user interaction (button click, scroll, resize etc)
 - item filtering
-- skin-type test
+- skin-type testing
