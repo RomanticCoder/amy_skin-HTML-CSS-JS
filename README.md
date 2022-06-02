@@ -1,5 +1,5 @@
 # AMY SKIN
-collaborative work with Web Desinger, Amy Jung and Front-end Developer Jordan Lee.
+a collaborative work with Web Desinger Amy Jung and Front-end Developer Jordan Lee.
 
 Amy Jung 👩‍🎨💻
 - Created a UI wireframe to plan a website structure.
